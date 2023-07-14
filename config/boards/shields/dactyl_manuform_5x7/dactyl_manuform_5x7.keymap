@@ -19,9 +19,9 @@
                 &kp ESC   &kp A    &kp S    &kp D     &kp F  &kp G  &kp C       &kp C    &kp H   &kp J  &kp K     &kp L     &kp SEMI  &kp SQT
                 &kp LSHFT &kp Z    &kp X    &kp C     &kp V  &kp B  &kp D       &kp D    &kp N   &kp M  &kp COMMA &kp DOT   &kp FSLH  &kp D
                 &kp A     &kp B    &kp C    &kp D     &kp E                                      &kp E  &kp LALT  &kp RALT  &kp Y     &kp Z
-                                            &kp SPACE &kp BSPC                           &kp TAB &kp RET
-                                                      &kp HOME  &kp END         &kp PAGE_UP &kp PAGE_DOWN
-                                                      &mo LWR   &kp DEL         &kp B    &mo LWR
+                                            &kp Q     &kp Q                              &kp TAB &kp RET
+                                                      &kp E     &kp R           &kp PAGE_UP &kp PAGE_DOWN
+                                                      &kp T     &kp Y           &kp B    &mo LWR
             >;
         };
 
