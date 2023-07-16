@@ -46,10 +46,10 @@
                 &kp EQUAL      &kp N1      &kp N2    &kp N3     &kp N4 &kp N5 &kp LG(UP)     &kp LG(DOWN)  &kp N6      &kp N7   &kp N8    &kp N9    &kp N0         &kp MINUS
                 &kp TAB        &kp Q       &kp W     &kp E      &kp R  &kp T  &kp LG(LEFT)   &kp LG(RIGHT) &kp Y       &kp U    &kp I     &kp O     &kp P          &ht_tp HASH BSLH
                 &kp ESC        &lt SMB1 A  &kp S     &kp D      &kp F  &kp G  &kp C          &kp C         &kp H       &kp J    &kp K     &kp L     &lt SMB1 SEMI  &mt RGUI SQT
-                &kp LSHFT      &mt LCTRL Z &kp X     &kp C      &kp V  &kp B  &kp D          &kp LA(LCTRL)  &kp N       &kp M    &kp COMMA &kp DOT   &mt RCTRL FSLH &kp RSHFT
+                &kp LSHFT      &mt LCTRL Z &kp X     &kp C      &kp V  &kp B  &kp D          &kp LA(LCTRL) &kp N       &kp M    &kp COMMA &kp DOT   &mt RCTRL FSLH &kp RSHFT
                 &lt SMB1 GRAVE &mo MED2    &kp LGUI  &kp LALT   &kp LCTRL                                              &kp LALT &kp RALT  &kp X     &mo MED2       &kp LC(A)
                                            &kp SPACE &kp BSPC                                              &kp TAB     &kp RET
-                                                     &kp HOME &kp END                        &kp PG_UP     &kp PG_DOWN
+                                                     &kp HOME &kp END                        &kp PG_UP     &kp PG_DN
                                                      &mo SMB1 &kp DEL                        &kp B         &mo SMB1
             >;
         };
