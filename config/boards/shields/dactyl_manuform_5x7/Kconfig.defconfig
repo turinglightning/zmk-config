@@ -1,7 +1,7 @@
 if SHIELD_DACTYL_MANUFORM_5x7_LEFT
 
     config ZMK_KEYBOARD_NAME
-        default "Alan-Dactyl-L"
+        default "AlanDL"
 
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
@@ -11,13 +11,13 @@ endif
 if SHIELD_DACTYL_MANUFORM_5x7_RIGHT
 
     config ZMK_KEYBOARD_NAME
-        default "Alan-Dactyl-R"
+        default "AlanDR"
 
 endif
 
 if SHIELD_DACTYL_MANUFORM_5x7_LEFT || SHIELD_DACTYL_MANUFORM_5x7_RIGHT
 
-config ZMK_SPLIT
-    default y
+    config ZMK_SPLIT
+        default y
 
 endif
