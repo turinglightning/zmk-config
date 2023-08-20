@@ -21,6 +21,25 @@
 
 
 / {
+    macros {
+        vim_yank: vim_yank {
+            label = "ZM_vim_yank";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DQT &kp PLUS &kp Y>
+                ;
+        };
+
+        vim_paste: vim_paste {
+            label = "ZM_vim_paste";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DQT &kp PLUS &kp P>
+                ;
+        };
+    };
     behaviors {
         ht_tp: hold_tap_tap_preferred {
             compatible = "zmk,behavior-hold-tap";
@@ -50,11 +69,11 @@
 
         smb1_layer {
             bindings = <
-                &kp ESC &kp F1    &kp F2    &kp F3   &kp F4   &kp F5    &trans                 &trans        &kp F6     &kp F7   &kp F8     &kp F9    &kp F10   &kp F11
-                &trans  &kp EXCL  &kp AT    &kp LBRC &kp RBRC &kp PIPE  &kp LA(LEFT)           &kp LA(RIGHT) &trans     &trans   &trans     &trans    &trans    &kp F12
-                &trans  &kp UNDER &kp EQUAL &kp LPAR &kp RPAR &kp DQT   &kp LA(LC(B))          &kp LA(N5)    &kp LEFT   &kp DOWN &kp UP     &kp RIGHT &trans    &trans
-                &trans  &kp PLUS  &kp ASTRK &kp LBKT &kp RBKT &kp HASH  &trans                 &trans        &trans     &trans   &trans     &trans    &kp BSLH  &trans
-                &trans  &kp CARET &trans    &trans   &trans                                                             &kp F8   &kp LS(F7) &kp F8    &kp F9    &kp SYSREQ
+                &kp ESC &kp F1    &kp F2    &kp F3   &kp F4   &kp F5    &trans                 &trans        &kp F6     &kp F7   &kp F8     &kp F9    &kp F10    &kp F11
+                &trans  &kp EXCL  &kp AT    &kp LBRC &kp RBRC &kp PIPE  &kp LA(LEFT)           &kp LA(RIGHT) &vim_yank  &trans   &trans     &trans    &vim_paste &kp F12
+                &trans  &kp UNDER &kp EQUAL &kp LPAR &kp RPAR &kp DQT   &kp LA(LC(B))          &kp LA(N5)    &kp LEFT   &kp DOWN &kp UP     &kp RIGHT &trans     &trans
+                &trans  &kp PLUS  &kp ASTRK &kp LBKT &kp RBKT &kp HASH  &trans                 &trans        &trans     &trans   &trans     &trans    &kp BSLH   &trans
+                &trans  &kp CARET &trans    &trans   &trans                                                             &kp F8   &kp LS(F7) &kp F8    &kp F9     &kp SYSREQ
                                                      &trans   &trans                                         &kp LC(F8) &kp LA(RET)
                                                         &kp LA(LS(F10)) &kp LA(LS(F10))        &kp LS(F10)   &kp LS(F9)
                                                         &trans          &trans                 &trans        &trans
