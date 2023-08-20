@@ -4,11 +4,9 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define DEFAULT 0
-#define LWR 1
-#define BASE0 2
-#define SMB1 3
-#define MED2 4
+#define BASE0 0
+#define SMB1 1
+#define MED2 2
 
 
 / {
@@ -25,32 +23,6 @@
     };
     keymap {
         compatible = "zmk,keymap";
-
-        default_layer {
-            bindings = <
-                &tog BASE0 &kp N1   &kp N2   &kp N3    &kp N4 &kp N5 &kp A       &kp A    &kp N6  &kp N7 &kp N8    &kp N9    &kp N0    &kp MINUS
-                &kp  TAB   &kp Q    &kp W    &kp E     &kp R  &kp T  &kp B       &kp B    &kp Y   &kp U  &kp I     &kp O     &kp P     &kp HASH
-                &kp  ESC   &kp A    &kp S    &kp D     &kp F  &kp G  &kp C       &kp C    &kp H   &kp J  &kp K     &kp L     &kp SEMI  &kp SQT
-                &kp  LSHFT &kp Z    &kp X    &kp C     &kp V  &kp B  &kp D       &kp D    &kp N   &kp M  &kp COMMA &kp DOT   &kp FSLH  &kp D
-                &kp  A     &kp B    &kp C    &kp D     &kp E                                      &kp E  &kp LALT  &kp RALT  &kp Y     &kp Z
-                                            &kp Q     &kp F                              &kp TAB &kp RET
-                                                      &kp E     &kp R           &kp PAGE_UP &kp PAGE_DOWN
-                                                      &kp T     &kp Y           &kp B    &mo LWR
-            >;
-        };
-
-        lower_layer {
-            bindings = <
-                &trans  &kp F1 &kp F2    &kp F3 &kp F4 &kp F5 &kp F6          &kp F7 &kp F8    &kp F9   &kp F10  &kp F11  &kp F12   &kp DEL
-                &trans  &trans &trans    &trans &trans &trans &trans          &trans &trans    &kp N7   &kp N8   &kp N9   &trans    &trans
-                &trans  &trans &trans    &trans &trans &trans &trans          &trans &kp DOT   &kp N4   &kp N5   &kp N6   &trans    &trans
-                &trans  &trans &trans    &trans &trans &trans &trans          &trans &kp COMMA &kp N1   &kp N2   &kp N3   &kp N0    &trans
-                &trans  &trans &trans    &trans &trans                                         &trans   &trans   &kp LPAR &kp RPAR  &trans
-                                                 &trans &kp A                        &trans    &trans
-                                                        &trans &trans         &trans &trans
-                                                        &trans &trans         &trans &trans
-            >;
-        };
 
         base0_layer {
             bindings = <
