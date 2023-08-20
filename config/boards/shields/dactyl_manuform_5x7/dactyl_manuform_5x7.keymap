@@ -33,7 +33,7 @@
                 &lt SMB1 GRAVE &mo MED2    &kp LGUI  &kp LALT   &kp LCTRL                                              &kp LALT &kp RALT  &kp X     &mo MED2       &kp LC(A)
                                            &kp SPACE &kp BSPC                                              &kp TAB     &kp RET
                                                      &kp HOME &kp END                        &kp PG_UP     &kp PG_DN
-                                                     &mo SMB1 &kp DEL                        &kp B         &mo SMB1
+                                                     &mo SMB1 &kp DEL                        &kp &trans    &mo SMB1
             >;
         };
 
