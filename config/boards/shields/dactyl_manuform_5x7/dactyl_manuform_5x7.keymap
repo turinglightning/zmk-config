@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
+#include "keys_en_gb_enhanced.h"
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
@@ -50,11 +51,11 @@
 
         base0_layer {
             bindings = <
-                &kp EQUAL      &kp N1      &kp N2    &kp N3     &kp N4 &kp N5 &kp LG(UP)     &kp LG(DOWN)  &kp N6      &kp N7   &kp N8    &kp N9    &kp N0         &ht_tp MINUS EQUAL
-                &kp TAB        &kp Q       &kp W     &kp E      &kp R  &kp T  &kp &trans     &kp &trans    &kp Y       &kp U    &kp I     &kp O     &kp P          &ht_tp HASH BSLH
-                &kp ESC        &lt MED2 A  &kp S     &kp D      &kp F  &kp G  &kp LG(LEFT)   &kp LG(RIGHT) &kp H       &kp J    &kp K     &kp L     &lt SMB1 SEMI  &mt RGUI SQT
-                &kp LSHFT      &mt LCTRL Z &kp X     &kp C      &kp V  &kp B  &kp &trans     &kp LA(LCTRL) &kp N       &kp M    &kp COMMA &kp DOT   &mt RCTRL FSLH &kp RSHFT
-                &lt SMB1 GRAVE &mo MED2    &kp LGUI  &kp LALT   &kp LCTRL                                              &kp LALT &kp RALT  &kp X     &mo MED2       &kp LC(A)
+                &kp GB_EQUAL   &kp GB_N1   &kp GB_N2 &kp GB_N3  &kp GB_N4 &kp GB_N5 &kp LG(UP) &kp LG(DOWN) &kp GB_N6  &kp GB_N7 &kp GB_N8 &kp GB_N9 &kp GB_N0     &ht_tp GB_MINUS GB_EQUAL
+                &kp TAB        &kp Q       &kp W     &kp E      &kp R  &kp T  &kp &trans     &kp &trans    &kp Y       &kp U    &kp I     &kp O     &kp P          &ht_tp GB_HASH GB_BSLH
+                &kp ESC        &lt MED2 A  &kp S     &kp D      &kp F  &kp G  &kp LG(LEFT)   &kp LG(RIGHT) &kp H       &kp J    &kp K     &kp L     &lt SMB1 GB_SEMI  &mt RGUI GB_SQT
+                &kp LSHFT      &mt LCTRL Z &kp X     &kp C      &kp V  &kp B  &kp &trans     &kp LA(LCTRL) &kp N       &kp M    &kp GB_COMMA &kp GB_DOT   &mt RCTRL GB_FSLH &kp RSHFT
+                &lt SMB1 GB_GRAVE &mo MED2    &kp LGUI  &kp LALT   &kp LCTRL                                              &kp LALT &kp RALT  &kp X     &mo MED2       &kp LC(A)
                                            &kp SPACE &kp BSPC                                              &kp TAB     &kp RET
                                                      &kp HOME &kp END                        &kp PG_UP     &kp PG_DN
                                                      &mo SMB1 &kp DEL                        &kp &trans    &mo SMB1
@@ -64,10 +65,10 @@
         smb1_layer {
             bindings = <
                 &kp ESC &kp F1    &kp F2    &kp F3   &kp F4   &kp F5    &trans                &trans        &kp F6     &kp F7   &kp F8     &kp F9    &kp F10    &kp F11
-                &trans  &kp EXCL  &kp AT    &kp LBRC &kp RBRC &kp PIPE  &trans                &trans        &vim_yank  &trans   &trans     &trans    &vim_paste &kp F12
-                &trans  &kp UNDER &kp EQUAL &kp LPAR &kp RPAR &kp DQT   &kp LA(LEFT)          &kp LA(RIGHT) &kp LEFT   &kp DOWN &kp UP     &kp RIGHT &trans     &trans
-                &trans  &kp PLUS  &kp ASTRK &kp LBKT &kp RBKT &kp HASH  &kp LA(LC(B))         &kp LA(N5)    &trans     &trans   &trans     &trans    &kp BSLH   &trans
-                &trans  &kp CARET &trans    &trans   &trans                                                             &kp F8   &kp LS(F7) &kp F8    &kp F9     &kp SYSREQ
+                &trans  &kp GB_EXCL  &kp GB_AT    &kp GB_LBRC &kp RBRC &kp GB_PIPE  &trans                &trans        &vim_yank  &trans   &trans     &trans    &vim_paste &kp F12
+                &trans  &kp GB_UNDER &kp GB_EQUAL &kp GB_LPAR &kp GB_RPAR &kp GB_DQT   &kp LA(LEFT)          &kp LA(RIGHT) &kp LEFT   &kp DOWN &kp UP     &kp RIGHT &trans     &trans
+                &trans  &kp GB_PLUS  &kp GB_ASTRK &kp GB_LBKT &kp GB_RBKT &kp GB_HASH  &kp LA(LC(B))         &kp LA(N5)    &trans     &trans   &trans     &trans    &kp GB_BSLH &trans
+                &trans  &kp GB_CARET &trans    &trans   &trans                                                             &kp F8   &kp LS(F7) &kp F8    &kp F9     &kp SYSREQ
                                                      &trans   &trans                                         &kp LC(F8) &kp LA(RET)
                                                         &kp LA(LS(F10)) &kp LA(LS(F10))        &kp LS(F10)   &kp LS(F9)
                                                         &trans          &trans                 &trans        &trans
