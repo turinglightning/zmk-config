@@ -51,40 +51,34 @@
 
         base0_layer {
             bindings = <
-                &kp GB_EQUAL   &kp GB_N1   &kp GB_N2 &kp GB_N3  &kp GB_N4 &kp GB_N5 &kp LG(UP) &kp LG(DOWN) &kp GB_N6  &kp GB_N7 &kp GB_N8 &kp GB_N9 &kp GB_N0     &ht_tp GB_MINUS GB_EQUAL
-                &kp TAB        &kp Q       &kp W     &kp E      &kp R  &kp T  &kp &trans     &kp &trans    &kp Y       &kp U    &kp I     &kp O     &kp P          &ht_tp GB_HASH GB_BSLH
-                &kp ESC        &lt MED2 A  &kp S     &kp D      &kp F  &kp G  &kp LG(LEFT)   &kp LG(RIGHT) &kp H       &kp J    &kp K     &kp L     &lt SMB1 GB_SEMI  &mt RGUI GB_SQT
-                &kp LSHFT      &mt LCTRL Z &kp X     &kp C      &kp V  &kp B  &kp &trans     &kp LA(LCTRL) &kp N       &kp M    &kp GB_COMMA &kp GB_DOT   &mt RCTRL GB_FSLH &kp RSHFT
-                &lt SMB1 GB_GRAVE &mo MED2    &kp LGUI  &kp LALT   &kp LCTRL                                              &kp LALT &kp RALT  &kp X     &mo MED2       &kp LC(A)
-                                           &kp SPACE &kp BSPC                                              &kp TAB     &kp RET
-                                                     &kp HOME &kp END                        &kp PG_UP     &kp PG_DN
-                                                     &mo SMB1 &kp DEL                        &kp &trans    &mo SMB1
+                &kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5  &kp GRAVE                       &kp LBKT &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &to 1
+&kp TAB    &kp Q  &kp W    &kp E   &kp R   &kp T  &kp BSLH                   &kp RBKT &kp Y   &kp U   &kp I   &kp O   &kp P    &kp RSHIFT
+&kp LSHIFT  &kp A  &kp S    &kp D    &kp F  &kp G &kp SEMI                   &kp SQT  &kp H   &kp J   &kp K   &kp L   &kp FSLH &kp ENTER
+&kp CAPS &kp Z  &kp X    &kp C    &kp V     &kp B                                     &kp N   &kp M   &kp COMMA &kp DOT  &kp RWIN &kp DEL 
+&kp LCTRL  &kp LALT  &kp END &kp HOME  &kp BACKSPACE  &kp ENTER                       &kp EQUAL &kp SPACE  &kp KP_PLUS  &kp KP_MINUS   &kp KP_MULTIPLY  &kp KP_DIVIDE  
+&kp UP &kp DOWN	&kp RIGHT  &kp LEFT 	                                              &kp MINUS   &kp PG_DN &kp PG_UP &kp RSHIFT
             >;
         };
 
         smb1_layer {
             bindings = <
-                &kp ESC &kp F1    &kp F2    &kp F3   &kp F4   &kp F5    &trans                &trans        &kp F6     &kp F7   &kp F8     &kp F9    &kp F10    &kp F11
-                &trans  &kp GB_EXCL  &kp GB_AT    &kp GB_LBRC &kp RBRC &kp GB_PIPE  &trans                &trans        &vim_yank  &trans   &trans     &trans    &vim_paste &kp F12
-                &trans  &kp GB_UNDER &kp GB_EQUAL &kp GB_LPAR &kp GB_RPAR &kp GB_DQT   &kp LA(LEFT)          &kp LA(RIGHT) &kp LEFT   &kp DOWN &kp UP     &kp RIGHT &trans     &trans
-                &trans  &kp GB_PLUS  &kp GB_ASTRK &kp GB_LBKT &kp GB_RBKT &kp GB_HASH  &kp LA(LC(B))         &kp LA(N5)    &trans     &trans   &trans     &trans    &kp GB_BSLH &trans
-                &trans  &kp GB_CARET &trans    &trans   &trans                                                             &kp F8   &kp LS(F7) &kp F8    &kp F9     &kp SYSREQ
-                                                     &trans   &trans                                         &kp LC(F8) &kp LA(RET)
-                                                        &kp LA(LS(F10)) &kp LA(LS(F10))        &kp LS(F10)   &kp LS(F9)
-                                                        &trans          &trans                 &trans        &trans
+                &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none &none &sys_reset                   &sys_reset  &none &none &none &none &none &to 0
+    &none &none &none &none &none &none &none                                             &none       &kp F2 &kp F8 &kp F9 &kp F12 &none &none
+    &none &bt BT_CLR &none &none &none &none  &none                                       &none       &none &none &none &none &none &none
+    &none &out OUT_TOG &none &none &none &none                                                        &none &none &none &none &none &none 
+    &none &none &none &none &none &none                                                               &none &none &none &none &none &none	
+    &none &none &none &none                                                                           &none &none &none &none
             >;
         };
 
         med2_layer {
             bindings = <
-                &bootloader &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans          &trans &trans     &trans       &trans       &trans     &trans &bootloader
-                &sys_reset  &bt BT_PRV   &bt BT_NXT   &trans       &trans &trans &trans          &trans &trans     &trans       &trans       &trans     &trans &sys_reset
-                &bt BT_CLR  &trans       &trans       &trans       &trans &trans &trans          &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans &kp C_PP
-                &trans      &trans       &trans       &trans       &trans &trans &trans          &trans &kp C_PREV &trans       &trans       &kp C_NEXT &trans &trans
-                &trans      &trans       &trans       &trans       &trans                                          &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE &trans &trans
-                                                                   &trans &trans                        &mkp LCLK &mkp RCLK
-                                                                          &trans &trans          &trans &trans
-                                                                          &trans &trans          &trans &trans
+                &none &none &none &none &none &none &none                                             &none &none &none &none &none &none &none
+    &none &none &none &none &none &none &none                                             &none &none &none &none &none &none &none
+    &none &none &none &none &none &none &none                                             &none &none &none &none &none &none &none
+    &none &none &none &none &none &none                                                         &none &none &none &none &none &none 
+    &none &none &none &none &none &none                                                         &none &none &none &none &none &none	
+    &none &none &none &none                         	                                        &none &none &none &none
             >;
         };
     };
