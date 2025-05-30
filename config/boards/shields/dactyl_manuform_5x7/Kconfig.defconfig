@@ -1,7 +1,7 @@
 if SHIELD_DACTYL_MANUFORM_5x7_LEFT
 
     config ZMK_KEYBOARD_NAME
-        default "AlanDL"
+        default "libao"
 
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
