@@ -56,7 +56,7 @@
 &kp LSHIFT  &kp A  &kp S    &kp D    &kp F  &kp G &kp SEMI                   &kp SQT  &kp H   &kp J   &kp K   &kp L   &kp FSLH &kp ENTER
 &kp CAPS &kp Z  &kp X    &kp C    &kp V     &kp B                                     &kp N   &kp M   &kp COMMA &kp DOT  &kp RWIN &kp DEL 
 &kp LCTRL  &kp LALT  &kp END &kp HOME  &kp BACKSPACE  &kp ENTER                       &kp EQUAL &kp SPACE  &kp KP_PLUS  &kp KP_MINUS   &kp KP_MULTIPLY  &kp KP_DIVIDE  
-&kp UP &kp DOWN	&kp RIGHT  &kp LEFT 	                                              &kp MINUS   &kp PG_DN &kp PG_UP &kp RSHIFT
+&kp DOWN &kp LEFT	&kp UP  &kp RIGHT 	                                              &kp RSHIFT   &kp MINUS &kp PG_UP &kp PG_DN
             >;
         };
 
