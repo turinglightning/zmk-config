@@ -5,6 +5,7 @@
 };
 
 &kscan0 {
+diode-direction = "col2row";
     col-gpios
         = <&gpio1 6 GPIO_ACTIVE_HIGH>
         , <&gpio1 4 GPIO_ACTIVE_HIGH>
